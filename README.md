@@ -30,7 +30,7 @@ const {sendMailPlus,FormataValorBRL} require ('Rich-utils)
   });
 
   var msg = 'msg de teste';
-  sendMailPlus('email@email.com', 'email2@email2.com', 'Nova Solicitação email!', msg);
+  sendMailPlus('emailDe@email.com', 'emailPara@email2.com', 'Nova Solicitação email!', msg);
 
 ### exportTable
 
