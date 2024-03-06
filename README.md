@@ -111,7 +111,7 @@ se não passado, é atribuido como default o separador ','
   ```javascript
   FormataCPFCNPJView('20649397096'); // Retorno: '206.493.970-96'
   ```
-### mascaraCPFCNPJView
+### mascaraCPFCNPJ
 - **Descrição:** Aplica máscara de CPF ou CNPJ em um input passado como parâmetro.
 - **Exemplo de uso:** 
   ```javascript
