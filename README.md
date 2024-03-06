@@ -8,7 +8,7 @@ Este repositório contém uma coleção de utilitários em JavaScript para facil
 ```terminal
 cd PastaDoProjeto
 npm init
-npm i Rich-utils
+npm i Rich-utils-br
 ```
 ```javascript
 const {sendMailPlus,FormataValorBRL} require ('Rich-utils)
