@@ -10,9 +10,22 @@
     "type": "git",
     "url": "https://github.com/Richadsonjr/Rich-utils.git"
   },
-  "keywords": ["Brasil", "utils","money","brl","Port","web","developer"],
+  "keywords": [
+    "Brasil",
+    "utils",
+    "money",
+    "brl",
+    "Port",
+    "web",
+    "developer"
+  ],
   "author": "Richadson Santos",
   "license": "ISC",
-  "bugs": {"url": "https://github.com/Richadsonjr/Rich-utils/issues"},
-  "homepage": "https://github.com/Richadsonjr/Rich-utils"
+  "bugs": {
+    "url": "https://github.com/Richadsonjr/Rich-utils/issues"
+  },
+  "homepage": "https://github.com/Richadsonjr/Rich-utils",
+  "dependencies": {
+    "nodemailer": "^6.9.11"
+  }
 }
