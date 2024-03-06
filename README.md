@@ -70,7 +70,7 @@ se não passado, é atribuido como default o separador ','
 - **Exemplo de uso:** 
   ```javascript
   removerCaracteresEspeciais('Não quero mais caracteres especiais!!!%$*~^`;') 
-  // Retorna 'Nao quero mais caracteres especiais!!!;'
+  // Retorna 'Nao quero mais caracteres especiais!!!;'```
 
 ### removerItensDuplicados
 - **Descrição:** Recebe um array como parâmetro e remove os itens duplicados, retornando um novo array simplificado.
@@ -83,9 +83,9 @@ se não passado, é atribuido como default o separador ','
 - **Descrição:** Verifica se o email passado por parâmetro é válido.
 - **Exemplo de uso:** 
   ```javascript
-  isEmailValid('email@gmail.com');
+  isEmailValid('email@gmail.com');```
 
-  ### Dataextenso
+### Dataextenso
 - **Descrição:** Traz a data atual por extenso.
 - **Exemplo de uso:** 
   ```javascript
