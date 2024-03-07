@@ -1,4 +1,6 @@
 // remove os caracteres especiais de uma string 
+const nodemailer = require('nodemailer')
+
 const removerCaracteresEspeciais= (texto)=> {
 const regex = /[^a-zA-Z0-9.,&°<>()\[\]{}\/"'?!;:\s\n]/g;
    const textoLimpo = texto.normalize('NFD').replace(regex, '');
@@ -220,7 +222,7 @@ const exportTable = (tableId, format, cabecalho, nomeArquivo, exclude, columnInd
 
 
 //  função que envia email utilizando o node e o pacote nodemailer
-const sendMailPlus = async(emailTo,emailFrom,title, Mensagem)=>{
+const sendMailPlus = async(emailTo,emailFrom,title, Mensagem,transporterCnf)=>{
   var toX = emailTo
   var msg = Mensagem
   var fromX= emailFrom
@@ -234,6 +236,12 @@ const sendMailPlus = async(emailTo,emailFrom,title, Mensagem)=>{
     subject: title,
     html: msg
   };
+
+// config transporter 
+
+const transporter = nodemailer.createTransport(transporterCnf);
+
+
 // console.log(mailOptions)
   transporter.sendMail(mailOptions, function(error, info){
     if (error) {

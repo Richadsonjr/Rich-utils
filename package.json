@@ -1,6 +1,6 @@
 {
   "name": "rich-utils-br",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "Este repositório contém uma coleção de utilitários em JavaScript para facilitar diversas tarefas comuns em desenvolvimento web.",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,11 @@
     "brl",
     "Port",
     "web",
-    "developer"
+    "developer",
+    "mail",
+    "email",
+    "export",
+    "exportar"
   ],
   "author": "Richadson Santos",
   "license": "ISC",

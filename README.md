@@ -11,7 +11,7 @@ npm init
 npm i Rich-utils-br
 ```
 ```javascript
-const {sendMailPlus,FormataValorBRL} require ('Rich-utils)
+const {sendMailPlus,FormataValorBRL} = require ('Rich-utils)
 ```
 ## Utilitários
 
@@ -19,18 +19,18 @@ const {sendMailPlus,FormataValorBRL} require ('Rich-utils)
 - **Descrição:** Realiza o envio de e-mails utilizando a biblioteca nodemailer.
 - **Exemplo de uso:**
   ```javascript
-  const transporter = nodemailer.createTransport({
-    host: config.configs.emailEnvio.host,
-    port: config.configs.emailEnvio.port,
-    secure: config.configs.emailEnvio.secure,
-    auth: {
-      user: emailenvio,
-      pass: config.configs.emailEnvio.pass
-    }
-  });
+      const  transporter ={
+        host: '',
+        port: '',
+        secure: '',
+        auth: {
+          user: '',
+          pass: ''
+        }
+      };
 
   var msg = 'msg de teste';
-  sendMailPlus('emailDe@email.com', 'emailPara@email2.com', 'Nova Solicitação email!', msg);
+  sendMailPlus('emailPara@email.com', 'emailDe@email2.com', 'Nova Solicitação email!', msg,transporter);
 
 ### exportTable
 
@@ -56,6 +56,8 @@ const {sendMailPlus,FormataValorBRL} require ('Rich-utils)
 
 7°: tipo de separador das colunas em caso de CSV. 
 se não passado, é atribuido como default o separador ','
+
+8°: objeto com as configurações de acesso do email a ser utilizado para envio.
 
 ### FormataValorBRL
 - **Descrição:** Converte valores monetários do padrão americano para o padrão brasileiro.
