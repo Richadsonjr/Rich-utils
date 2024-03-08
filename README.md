@@ -1,4 +1,4 @@
-# Rich-utils
+# Rich-utils-br
 
 Este repositório contém uma coleção de utilitários em JavaScript para facilitar diversas tarefas comuns em desenvolvimento web.
 
